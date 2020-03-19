@@ -20,6 +20,11 @@ public class Q1 {
 		str1=str1.substring(str2.length()); //night
 		System.out.println(str1);
 		System.out.println(str2);
+		
+		//another way 
+		String s1="Hello";
+		String s2="Bye";
+		
 	}
 
 }
