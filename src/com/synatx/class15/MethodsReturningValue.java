@@ -14,6 +14,9 @@ public class MethodsReturningValue {
 		 MethodsReturningValue obj=new MethodsReturningValue();
 		 int x= obj.largest(10, 20);
 		 boolean flag=obj.isOdd(x);
+		 char grade=obj.mark(75);
+		 System.out.println(grade);
+		 
 	}
 	// create a method that returns largest number from two given numbers
 	
@@ -35,4 +38,18 @@ public class MethodsReturningValue {
 		}return isOdd;
 	}
 
-}
+ // creat a method that will accept marks and will return grades
+
+		char mark(int a) {
+			char grade;
+			if(a>90) {
+				grade='A';
+			}else if (a<=90 && a>80) {
+				grade='B';
+			}else if (a<=80 && a>70) {
+				grade='C';
+			}else {
+				grade='F';
+			}return grade;
+			
+}}
