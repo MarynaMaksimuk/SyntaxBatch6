@@ -2,20 +2,28 @@ package com.synatx.class15;
 
 public class Exersise {
 
-	  int sum=0;
-	  int sumEvenToX (int x){
-	    for (int i=1; i<=x; i++){
-	      if (i%2==0){
-	        sum=sum+i;
-	      }
-	    }return sum;
+	  String nameOfTheCountry, capital;
+	  int population;
+	  
+	  void values (){
+	   System.out.println("The capital of "+nameOfTheCountry+" is "+capital+" and population is "+population);
+	    
 	  }
 	  public static void main(String[]args){
-	    Exersise even=new Exersise();
-	    System.out.println(even.sumEvenToX(5));
+		  Exersise obj=new Exersise();
+	    obj.nameOfTheCountry="USA";
+	    obj.capital="Washington DC";
+	    obj.population=330000000;
+	    
+	    obj.values();
+	    
+	    obj.nameOfTheCountry="Kazakhstan";
+	    obj.capital="Astana";
+	    obj.population=185000000;
+	    
+	    obj.values();
+	   
+	    
 	  }
 	  
-	  
-	  
 	}
-	  
