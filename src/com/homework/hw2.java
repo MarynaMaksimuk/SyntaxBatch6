@@ -20,5 +20,10 @@ class Main {
 			      System.out.println(count);
 			    
 			  
-			}}
+			}
+
+	public static void method(String string, String string2) {
+		// TODO Auto-generated method stub
+		
+	}}
 		
