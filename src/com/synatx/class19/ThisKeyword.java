@@ -16,7 +16,7 @@ public class ThisKeyword {
 		System.out.println("Sum of local variables "+(a+b));
 		System.out.println("Sum of instatnce variables "+(this.a+this.b));
 	}
-	public void DisplayInfo() { // we can call method inside another method
+	private void DisplayInfo() { // we can call method inside another method
 		sum(2,5);
 	}
 	public static void main(String[]args) {
