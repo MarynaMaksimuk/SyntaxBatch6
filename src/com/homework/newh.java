@@ -2,21 +2,24 @@ package com.homework;
 
 public class newh {
 	
-	static String mixString(String s1, String s2){
-	    StringBuilder mix=new StringBuilder();
-	    for (int i=0; i<s1.length(); i++) {
-	    	mix.append(s1.charAt(i));
-	    	mix.append(s2.charAt(i));
-	    }String result=mix.toString();
-	    return result;
+	public boolean isPalindrome(String s) {
+		s=s.toLowerCase().replaceAll("[^a-z]", "");
+	    String reverse="";
+	    char []rev=s.toCharArray();
+	    for (int i=rev.length-1; i >=0; i--) {
+	    	reverse+=rev[i];
+	        if ( reverse.equals(s) ) {
+	            return true;
+	        }
 	    }
+	    return false;
+	}
 		
-		
-		//test case below (dont change):
 		public static void main(String[] args){
-		  String firstValue = mixString("12345","abcde"); 
-			System.out.println(firstValue); 
-			String secondValue = mixString("howdy","hello");
-			System.out.println(secondValue); 
+		  newh obj=new newh();
+		  System.out.println(obj.isPalindrome("Eva, Can I Stab Bats In A Cave"));
+		  
+		  newh obj2= new newh();
+		  System.out.println(obj2.isPalindrome("text"));
 		}
 	}
